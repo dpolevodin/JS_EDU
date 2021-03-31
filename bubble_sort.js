@@ -17,5 +17,6 @@ function bubble_sort(arr) {
             }
         }
     }
+    return arr;
 }
-bubble_sort(array);
+alert(bubble_sort(array));
