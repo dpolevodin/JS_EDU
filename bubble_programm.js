@@ -37,7 +37,7 @@ const getBestResult = (array, highScore) => {
 }
 
 const getMostCostEffect = (array, costs, highScore) => {
-    let cost = 100;
+    let cost = 1;
     let index;
 
     for (let i = 0; i < array.length; i++) {
