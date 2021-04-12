@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My playlist</title>
+    <link rel="styleSheet" href="rules.css">
     <script>
         const addSongs = () => {
             let song1 = document.getElementById('song1');
@@ -14,6 +15,9 @@
             song1.innerHTML = 'На небе вороны';
             song2.innerHTML = 'Просвистела';
             song3.innerHTML = 'Это все';
+
+            let changeColor = document.getElementById('song3');
+            changeColor.setAttribute('class', 'redtext');
         }
         window.onload = addSongs;
     </script>
