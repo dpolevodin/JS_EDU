@@ -5,7 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My playlist</title>
-    <link rel="styleSheet" href="rules.css">
+    <style>
+        .redtext {
+            color: red;
+        }
+    </style>
     <script>
         const addSongs = () => {
             let song1 = document.getElementById('song1');
@@ -31,5 +35,4 @@
     </ul>
 </body>
 </html>
-
 //возможны проблемы с загрузкой страницы. Либо надо дождаться загрузки страницы до запуска скрипта (window.onload), либо переместить код в самый низ (не надо так делать)
