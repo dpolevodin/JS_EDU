@@ -4,21 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My playlist</title>
     <script>
-        const init = () => {
-            let planet = document.getElementById('cod2');
-            planet.innerHTML = 'Change element cod2';
+        const addSongs = () => {
+            let song1 = document.getElementById('song1');
+            let song2 = document.getElementById('song2');
+            let song3 = document.getElementById('song3');
+            
+            song1.innerHTML = 'На небе вороны';
+            song2.innerHTML = 'Просвистела';
+            song3.innerHTML = 'Это все';
         }
-
-        window.onload = init;
+        window.onload = addSongs;
     </script>
-    </head>
-<body>
-    <p id ='cod1'>Test DOM1</p>
-    <p id ='cod2'>Test DOM2</p>
 </head>
+<body>
+    <h1>My awesome playlist</h1>
+    <ul id='playlist'>
+        <li id='song1'>'song1'</li>
+        <li id='song2'>'song2'</li>
+        <li id='song3'>'song3'</li>
+    </ul>
 </body>
 </html>
 
-//возможны проблемы с загрузкой страницы. Либо надо дождаться загрузки страницы до запуска скрипта (window.onload), либо переместить код в самый низ
+//возможны проблемы с загрузкой страницы. Либо надо дождаться загрузки страницы до запуска скрипта (window.onload), либо переместить код в самый низ (не надо так делать)
