@@ -5,16 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        const init = () => {
+            let planet = document.getElementById('cod2');
+            planet.innerHTML = 'Change element cod2';
+        }
+
+        window.onload = init;
+    </script>
     </head>
 <body>
     <p id ='cod1'>Test DOM1</p>
     <p id ='cod2'>Test DOM2</p>
-    <script>
-        let planet = document.getElementById('cod2');
-        planet.innerHTML = 'Change element cod2';
-    </script>
 </head>
 </body>
 </html>
 
-//возможны проблемы с загрузкой страницы. Либо надо дождаться загрузки страницы до запуска скрипта, либо переместить код в самый низ
+//возможны проблемы с загрузкой страницы. Либо надо дождаться загрузки страницы до запуска скрипта (window.onload), либо переместить код в самый низ
