@@ -80,4 +80,9 @@ cadi.drive();
 cadi.drive();
 cadi.stop();
 
-console.log(typeof cadi)
+console.log(typeof cadi) 
+
+if (cadi instanceof CarBuilderParams) {
+    console.log("Congrats, it's a CarBuilderParams!");
+};
+// возвращает true, если cadi является экземпляром, созданным конструктором CarBuilderParams
