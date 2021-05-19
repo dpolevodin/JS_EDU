@@ -79,3 +79,5 @@ cadi.drive();
 cadi.drive();
 cadi.drive();
 cadi.stop();
+
+console.log(typeof cadi)
