@@ -27,17 +27,10 @@ Dog.prototype.sit = function() {
     }
     };
 
-
-let fido = new Dog("Fido", "Mixed", 38);
-let fluffy = new Dog("Fluffy", "Poodle", 30);
-let spot = new Dog("Spot", "Chihuahua", 10);
-let barnaby = new Dog('Barnaby', 'Basset Hound', 55);
-
 let aDog = new Dog();
 
 function ShowDog(name, breed, weight, handler) {
-    Dog.call(this, name, breed, weight); //call — встроенный метод, который может использоваться с любой функцией (не забывайте, что Dog — это функция). 
-                                         //Dog.call вызывает функцию Dog и передает ей объект, 
+    Dog.call(this, name, breed, weight); //call — встроенный метод, который может использоваться с любой функцией (не забывайте, что Dog — это функция). Dog.call вызывает функцию Dog и передает ей объект,
                                         //который должен использоваться как this, вместе со всеми аргументами функции Dog.
     this.handler = handler;
 }
@@ -58,8 +51,15 @@ ShowDog.prototype.groom = function() {
 console.log("Groom");
 };
 
-let scotty = new ShowDog("Scotty", "Scottish Terrier", 15, "Cookie");
-scotty.stack();
+var fido = new Dog("Fido", "Mixed", 38);
+var fluffy = new Dog("Fluffy", "Poodle", 30);
+var spot = new Dog("Spot", "Chihuahua", 10);
+var scotty = new ShowDog("Scotty", "Scottish Terrier", 15, "Cookie");
+var beatrice = new ShowDog("Beatrice", "Pomeranian", 5, "Hamilton");
+fido.bark();
+fluffy.bark();
+spot.bark();
 scotty.bark();
-console.log(scotty.league);
-console.log(scotty.species);
+beatrice.bark();
+scotty.gait("Walk");
+beatrice.groom();
